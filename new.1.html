@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>new 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="new 1.css" />
+    <script src="new1.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <button>
+          profits
+        </button>
+      </li>
+      <li>
+        <button>
+          reset
+        </button>
+      </li>
+    </ul>
+    <p>data save program</p>
+    <div class="inputs">
+      <input type="text" placeholder="title" id="title" />
+      <div class="totals">
+        <input
+          onkeyup="getTotal()"
+          type="number"
+          placeholder="price"
+          id="price"
+        />
+        <input
+          onkeyup="getTotal()"
+          type="number"
+          placeholder="taxses"
+          id="taxses"
+        />
+        <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads" />
+        <input
+          onkeyup="getTotal()"
+          type="number"
+          placeholder="discount"
+          id="discount"
+        />
+        <small id="total">Total</small>
+      </div>
+      <input type="numper" id="count" placeholder="count" />
+      <input type="text" id="category" placeholder="category" />
+      <button id="submit" onclick="submit()">creat</button>
+      <input
+        type="text"
+        id="search"
+        onkeyup="searchdata(this.value)"
+        placeholder="search"
+      />
+      <div class="search2">
+        <button onclick="getsearchmood(this.id)" id="by_category">
+          search by category
+        </button>
+        <button onclick="getsearchmood(this.id)" id="by_id">
+          search by id
+        </button>
+      </div>
+      <div id="deleteAll"></div>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>dicount</th>
+          <th>total</th>
+          <th>count</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+          <th>copy</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <footer>
+      **Designed and by ENG/MOHAMED ABDEL RAOF**
+    </footer>
+  </body>
+</html>
